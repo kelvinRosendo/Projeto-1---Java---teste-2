@@ -48,3 +48,27 @@ class projeto2 {
         System.out.println(texto);
     }
 }
+
+class projeto3 {
+
+    public static void main(String[] args) throws Exception {
+    String nomeCompleto = "Kelvin Rosendo De Souza";
+    String filme = "vingadores";
+    int anoLançamento = 2012;
+    int duraçao = 143;
+    float notaCritica = 9.9f;
+    boolean sucesso = true;
+    int bilheteria = 1;
+
+
+    System.out.println(sucesso);
+    System.out.println(notaCritica);
+    System.out.println(duraçao);
+    System.out.println(anoLançamento);
+    System.out.println(filme);
+    System.out.println(nomeCompleto);
+
+    System.err.println("o filme " + filme + "foi um sucesso de bilheteria vendendo mais de " + bilheteria + " bilhão e meio, com uma nota geral de " + notaCritica + " sendo um filme lançado em " + anoLançamento + " e que envelheceu e marcou muitas infâncias" );
+    System.out.format("o filme %s");
+  }
+}
