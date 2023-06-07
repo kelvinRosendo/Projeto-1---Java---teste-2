@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class projeto {
 
     public static void main(String[] args)  throws Exception  {
@@ -69,6 +71,35 @@ class projeto3 {
     System.out.println(nomeCompleto);
 
     System.err.println("o filme " + filme + "foi um sucesso de bilheteria vendendo mais de " + bilheteria + " bilhão e meio, com uma nota geral de " + notaCritica + " sendo um filme lançado em " + anoLançamento + " e que envelheceu e marcou muitas infâncias" );
-    System.out.format("o filme %s");
+    System.out.format("o filme");
   }
+}
+
+class variaveis {
+
+    public static void main(String[] args) throws Exception {
+        String jogo;
+        Scanner leitor = new Scanner(System.in);
+        leitor.useDelimiter("[;\r\n]+");
+
+        System.out.println("Qual é o seu jogo favorito?");
+        
+        jogo = leitor.next();
+
+        System.out.println(jogo + "é realmente um bom jogo");
+
+    }
+}
+
+
+        class Matemática {
+
+    public static void main(String[] args) throws Exception {
+        int nmrA = 8;
+        int nmrB = 19;
+
+        int resultado = nmrA + nmrB;
+
+        JOptionPane.showMessageDialog(null , resultado , "Matemática" );
+    }
 }
