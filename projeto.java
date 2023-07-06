@@ -71,7 +71,19 @@ class projeto3 {
     System.out.println(nomeCompleto);
 
     System.err.println("o filme " + filme + "foi um sucesso de bilheteria vendendo mais de " + bilheteria + " bilhão e meio, com uma nota geral de " + notaCritica + " sendo um filme lançado em " + anoLançamento + " e que envelheceu e marcou muitas infâncias" );
-    System.out.format("o filme");
+    
+
+    System.out.format("o filme %s lançado em %d, tem  uma duração de %d minutos.\n", filme, anoLançamento, duraçao);
+
+    String texto = String.format("o filme %s lançado em %d, tem  uma duração de %d minutos.\n\n", filme, anoLançamento, duraçao);
+
+    String mensagem1 = "Somos variaveis separadas\n";
+    String mensagem2 = "Mas que pela concatenação\n";
+    String mensagem3 = "Podemso ser exibidas em apenas um comando\n";
+
+    String mensagem123 = mensagem1 + mensagem2 + mensagem3;
+    
+    System.out.println(mensagem123);
   }
 }
 
@@ -86,7 +98,7 @@ class variaveis {
         
         jogo = leitor.next();
 
-        System.out.println(jogo + "é realmente um bom jogo");
+        System.out.println(jogo + " é realmente um bom jogo");
 
     }
 }
