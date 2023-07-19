@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 public class projeto {
 
     public static void main(String[] args)  throws Exception  {
@@ -77,6 +79,8 @@ class projeto3 {
 
     String texto = String.format("o filme %s lançado em %d, tem  uma duração de %d minutos.\n\n", filme, anoLançamento, duraçao);
 
+    System.out.println(texto);
+
     String mensagem1 = "Somos variaveis separadas\n";
     String mensagem2 = "Mas que pela concatenação\n";
     String mensagem3 = "Podemso ser exibidas em apenas um comando\n";
@@ -87,24 +91,50 @@ class projeto3 {
   }
 }
 
-class variaveis {
+class console {
 
     public static void main(String[] args) throws Exception {
-        String jogo;
+        String elo;
+        String posicao;
+
         Scanner leitor = new Scanner(System.in);
-        leitor.useDelimiter("[;\r\n]+");
 
-        System.out.println("Qual é o seu jogo favorito?");
-        
-        jogo = leitor.next();
+        System.out.println("Qual é o seu elo no ff?");
+        elo = leitor.nextLine();
 
-        System.out.println(jogo + " é realmente um bom jogo");
+        System.out.println("E qual a sua posicao ");
+        posicao = leitor.nextLine();
+
+        System.out.println("Qual o seu personagem favorito ?");
+        String personagem = leitor.nextLine();
+
+        System.out.println("Você é " + elo + "na posição " + posicao + "e gosta de jogar de " + personagem  );
 
     }
 }
 
+/// toda vez que for presiso converter um valor de uma String em um float ou em um Int usar : interger(o tipo da varialvel).parseInt(nome da variavel) ou float(o tipo da variavel).parseFloat(nome da variavel)
 
-        class Matemática {
+
+
+     class Janela{    
+        public static void main(String[] args) throws Exception{
+        String serie = JOptionPane.showInputDialog(null, "Qual sua serie favorita ? ", "serie", 3);
+        String texto = JOptionPane.showInputDialog(null, "digite um numero: ");
+        int numero = Interger.parseInt(texto);
+        numero = numero * 10;
+        System.out.println(serie);
+        System.out.println(numero);
+    } 
+}
+    
+
+   /// segunda linha (l, 120): o parentComponent em uma situação onde o codigo teria uma interface grafica, este componente seria de onde sai a informação o "pai" da informação.
+
+
+
+
+    class Matemática {
 
     public static void main(String[] args) throws Exception {
         int nmrA = 8;
@@ -112,6 +142,6 @@ class variaveis {
 
         int resultado = nmrA + nmrB;
 
-        JOptionPane.showMessageDialog(null , resultado , "Matemática" );
+        JOptionPane.showMessageDialog(null , resultado , "Matemática" );;
     }
 }
