@@ -1,6 +1,9 @@
+import java.util.Random;
 import java.util.Scanner;
 
 import javax.swing.JOptionPane;
+
+import JOptionPane;
 
 public class projeto {
 
@@ -11,7 +14,7 @@ public class projeto {
 
 //teste de variaveis
 
-class projeto2 {
+class variaveis_e_prints {
 
     public static void main(String[] args) throws Exception {
         
@@ -53,7 +56,7 @@ class projeto2 {
     }
 }
 
-class projeto3 {
+class mini_projeto {
 
     public static void main(String[] args) throws Exception {
     String nomeCompleto = "Kelvin Rosendo De Souza";
@@ -97,18 +100,18 @@ class console {
         String elo;
         String posicao;
 
-        Scanner leitor = new Scanner(System.in);
+        try (Scanner leitor = new Scanner(System.in)) {
+            System.out.println("Qual é o seu elo no ff?");
+            elo = leitor.nextLine();
 
-        System.out.println("Qual é o seu elo no ff?");
-        elo = leitor.nextLine();
+            System.out.println("E qual a sua posicao ");
+            posicao = leitor.nextLine();
 
-        System.out.println("E qual a sua posicao ");
-        posicao = leitor.nextLine();
+            System.out.println("Qual o seu personagem favorito ?");
+            String personagem = leitor.nextLine();
 
-        System.out.println("Qual o seu personagem favorito ?");
-        String personagem = leitor.nextLine();
-
-        System.out.println("Você é " + elo + "na posição " + posicao + "e gosta de jogar de " + personagem  );
+            System.out.println("Você é " + elo + "na posição " + posicao + "e gosta de jogar de " + personagem  );
+        }
 
     }
 }
@@ -142,5 +145,20 @@ class console {
         int resultado = nmrA + nmrB;
 
         JOptionPane.showMessageDialog(null , resultado , "Matemática" );;
+    }
+}
+
+class incrementando_aleatoriedade {
+
+    public static void main(String[] args) throws Exception {
+
+         //menor valor  I valor maximo a ser gerado I
+// fora do parenteses   V                           V
+        int dado6faces = 1 + (int) (Math.random() * 6);
+       // JOptionPane.showMessageDialog(null, dado6faces );
+    
+        Random gerador = new Random();
+        int numero_aleatorio = 1 + gerador.nextInt(100); //6 é o numero maximo e 1 é o numero minimo
+        JOptionPane.showMessageDialog(null, numero_aleatorio);
     }
 }
