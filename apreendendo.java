@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
-public class projeto {
+public class variaveis {
 
     public static void main(String[] args)  throws Exception  {
         System.out.println("se isso aki de certo eu choro");
