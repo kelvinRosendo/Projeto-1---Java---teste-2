@@ -3,8 +3,6 @@ import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
-import JOptionPane;
-
 public class projeto {
 
     public static void main(String[] args)  throws Exception  {
@@ -151,14 +149,38 @@ class console {
 class incrementando_aleatoriedade {
 
     public static void main(String[] args) throws Exception {
-
+    
          //menor valor  I valor maximo a ser gerado I
 // fora do parenteses   V                           V
         int dado6faces = 1 + (int) (Math.random() * 6);
        // JOptionPane.showMessageDialog(null, dado6faces );
+
+       System.out.println("seu numero da sorte foi" + dado6faces );
     
         Random gerador = new Random();
         int numero_aleatorio = 1 + gerador.nextInt(100); //6 é o numero maximo e 1 é o numero minimo
         JOptionPane.showMessageDialog(null, numero_aleatorio);
+    }
+}
+
+ 
+class apreendendo_os_boolean {
+
+    public static void main(String[] args) throws Exception { 
+        idade3 = 18;
+        /* operadores relacionares
+         * >  maior que:
+         * <  menor que:
+         * >= maior ou igual a:
+         * <= menor ou igual a
+         * == igual a: 
+         * != diferente de:
+         * 
+         * sempre será comparado o valor da esquerda para a direita
+         */
+        boolean resultado3 = idade <= 18;
+        JOptionPane.showMessageDialog(null,resultado3);
+        
+
     }
 }
